@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Html class</title>
+    <script type="text/javascript">
+        function msg() {
+            alert("Hello World");
+
+        }
+
+        function validateform() {
+            var initial_inputs = document.getElementsByClassName("initial_inputs").value;
+            console.log(initial_inputs);
+
+            /* if(initial_inputs.length==0)
+            {
+                document.getElementById("nerror").innerHTML="Name field is mandatory";
+            } */
+            
+            var phone = document.getElementById("phone").value;
+            console.log(phone);
+            var email = document.getElementById("email").value;
+            console.log(email);
+            /*var name = document.getElementsByName("gender").value;
+            console.log(gender); */
+            var address = document.getElementById("address").value;
+            console.log(address);
+            var private_info = document.getElementsByClassName("private_info").value;
+            console.log(private_info);
+            /*var name = document.getElementsByName("hobbies").value;
+            console.log(hobbies);
+            var name = document.getElementsByName("country").value;
+            console.log(country);*/
+               }
+
+
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="form-container">
+            <form>
+                <h1>Student Form</h1>
+                <div class="initial-inputs">
+                    <label>Name:</label>
+                    <input type="text" id="name">
+                    <p id="nerror"></p>
+
+                    <label>Phone:</label>
+                    <input type="text" id="phone">
+                    
+                    <div>
+                    <label>Email:</label>
+                    <input type="text" id="email">
+                    </div>
+                </div>
+
+                <div class="private_info">
+                    <label>Gender:</label>
+                    <div class="private-info-inputs">
+                        <div>
+                            <input type="radio" value="male" name="gender">Male
+                        </div>
+                        <div>
+                            <input type="radio" value="female" name="gender">Female
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <label>Address:</label>
+                    <input type="url" , id="address">
+                </div>
+                <div><label>Hobbies:</label>
+                    <input type="checkbox" , name="hobbies">Gaming
+                    <input type="checkbox" , name="hobbies">Singing
+                    <input type="checkbox" , name="hobbies">Coding
+                    <input type="checkbox" , name="hobbies">Cooking
+                </div>
+
+                <div><label>Country:</label>
+                    <select name="country">
+                        <label>Country</label>
+                        <option></option>
+                        <option>Nepal</option>
+                        <option>China</option>
+                        <option>India</option>
+                    </select>
+
+                </div>
+                <div class="submit_button">
+
+                    <input type="button", value="click", onclick="validateform()" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

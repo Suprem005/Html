@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(161, 161, 241);
+}
+
+h1 {
+    color: rgb(227, 176, 176);
+}
+
+label {
+    color: rgb(149, 126, 126);
+}
+
+value {
+    color: rgb(243, 243, 246);
+}
+
+
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.form-container{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50vw;
+    /* margin: 20px 20px; */
+}
+
+.initial_inputs{
+    display : flex;
+    flex-direction: row;
+    margin: 10px 20px;
+}
+
+.private_info{
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin: 10px 20px;
+}
+
+.private-info-inputs{
+    display : flex;
+    flex-direction: column;
+    
+}
+.private-info-inputs div{
+    margin-top: 10px;
+}
+
+.submit_button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+input[type="button"]
+{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+input[type = "text"]
+{
+    margin-bottom: 10px;
+    border-radius: 10px;
+       
+}
